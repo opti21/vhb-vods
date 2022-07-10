@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       const parser = new Parser();
 
       const feed = await parser.parseURL(
-        "https://vhb-vod-bot.herokuapp.com/rss"
+        "https://vhb-proxy.herokuapp.com/https://vhb-vod-bot.herokuapp.com/rss"
       );
 
       setVods(feed.items);
